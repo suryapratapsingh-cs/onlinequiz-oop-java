@@ -1,0 +1,79 @@
+# Online Quiz Application (Java OOP Project)
+
+A console-based interactive quiz application demonstrating core **Object-Oriented Programming** concepts in Java.
+
+## Project Structure
+
+```
+OnlineQuizApp/
+├── src/
+│   ├── Question.java       # Encapsulates each quiz question
+│   ├── QuizManager.java    # Manages quiz flow, scoring, and I/O
+│   └── Main.java           # Entry point
+└── README.md
+```
+
+## OOP Concepts Demonstrated
+
+| Concept | Where |
+|---|---|
+| Classes & Objects | `Question`, `QuizManager`, `Main` |
+| Encapsulation | Private fields + public getters in `Question` |
+| Arrays of Objects | `Question[] questions` in `QuizManager` |
+| String comparison | `.equals()` / `.equalsIgnoreCase()` — **not** `==` |
+| Looping | `for` loop over `questions[]` array |
+| Conditionals | `if-else` chain for scoring and remarks |
+
+## How to Compile and Run
+
+```bash
+# Step 1 — Navigate to src directory
+cd src
+
+# Step 2 — Compile all Java files
+javac *.java
+
+# Step 3 — Run the program
+java Main
+```
+
+**Requirements:** JDK 8 or higher
+
+## Sample Output
+
+```
+==========================================
+       WELCOME TO THE ONLINE QUIZ
+==========================================
+Answer each question with a, b, c, or d.
+------------------------------------------
+
+Q1: What is Java?
+  a) Programming Language
+  b) Operating System
+  c) Database
+  d) Browser
+
+Enter your answer: a
+Correct!
+
+Q2: What does OOP stand for?
+  a) Object-Oriented Programming
+  ...
+
+Final Score : 4/5
+Percentage  : 80.0%
+Remark      : Excellent!
+==========================================
+```
+
+## Salary Logic (Scoring)
+
+- ≥ 80% → Excellent!
+- ≥ 60% → Good Job!
+- ≥ 40% → Keep Practising!
+- < 40% → Better Luck Next Time!
+
+## Subject
+**Object-Oriented Programming with Java**  
+Rungta International Skills University, Bhilai, CG — Session 2025-26

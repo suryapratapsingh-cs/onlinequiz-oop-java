@@ -1,0 +1,20 @@
+/**
+ * Main.java
+ * Entry point. Creates a QuizManager object and starts the quiz.
+ *
+ * OOP concepts demonstrated:
+ *   - Classes & Objects    : Question and QuizManager are well-defined classes
+ *   - Encapsulation        : Private fields with public getters in Question
+ *   - Arrays of Objects    : Question[] inside QuizManager
+ *   - String comparison    : .equals() / .equalsIgnoreCase() — not ==
+ *   - Looping / Conditionals: for-loop over questions; if-else for scoring
+ */
+public class Main {
+    public static void main(String[] args) {
+        // Create a QuizManager object — this loads all questions
+        QuizManager quiz = new QuizManager();
+
+        // Start the interactive quiz session
+        quiz.startQuiz();
+    }
+}

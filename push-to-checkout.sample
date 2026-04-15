@@ -1,0 +1,7 @@
+Initial commit: Online Quiz Application (OOP Java Project)
+
+- Question.java: encapsulates question data (private fields, getters, isCorrect())
+- QuizManager.java: manages quiz flow with Question[] array, Scanner input, scoring
+- Main.java: entry point
+- Quiz_Project_Report.docx: full project report matching university template
+- README.md: setup and run instructions
