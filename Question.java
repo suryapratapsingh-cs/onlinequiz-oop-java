@@ -1,30 +1,20 @@
 import java.util.Scanner;
 
-/**
- * QuizManager.java
- * Manages the quiz: stores questions, displays them, accepts input, scores.
- * Demonstrates: Arrays of objects, loops, String comparison, input handling
- */
+
 public class QuizManager {
 
-    // Array of Question objects — demonstrates "array of objects" concept
+   
     private Question[] questions;
     private int        score;
     private Scanner    scanner;
 
-    /**
-     * Constructor: initialises the scanner and loads all quiz questions.
-     */
     public QuizManager() {
         scanner = new Scanner(System.in);
         score   = 0;
         loadQuestions();
     }
 
-    /**
-     * Populates the questions array with Question objects.
-     * Adding a new question only requires appending here — no other change needed.
-     */
+
     private void loadQuestions() {
         questions = new Question[] {
 
@@ -85,9 +75,7 @@ public class QuizManager {
         };
     }
 
-    /**
-     * Runs the quiz: displays each question, reads user input, scores it.
-     */
+
     public void startQuiz() {
         System.out.println("==========================================");
         System.out.println("       WELCOME TO THE ONLINE QUIZ        ");
@@ -116,9 +104,6 @@ public class QuizManager {
         scanner.close();
     }
 
-    /**
-     * Prints a numbered question with all its options.
-     */
     private void displayQuestion(int number, Question q) {
         System.out.println("Q" + number + ": " + q.getQuestionText());
         for (String option : q.getOptions()) {
@@ -127,9 +112,6 @@ public class QuizManager {
         System.out.println();
     }
 
-    /**
-     * Displays the final score, percentage, and a remark.
-     */
     private void displayResult() {
         System.out.println("==========================================");
         System.out.println("            QUIZ COMPLETED!              ");
@@ -139,7 +121,7 @@ public class QuizManager {
         double percentage = ((double) score / questions.length) * 100;
         System.out.printf("Percentage  : %.1f%%%n", percentage);
 
-        // Remark based on score
+
         String remark;
         if (percentage >= 80) {
             remark = "Excellent!";
