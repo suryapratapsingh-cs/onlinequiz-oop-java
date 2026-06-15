@@ -1,9 +1,9 @@
 public class Question {
 
-    // Private fields — encapsulation ensures direct access is prevented
+  
     private String   questionText;
     private String[] options;
-    private String   correctAnswer;  // e.g., "a", "b", "c", or "d"
+    private String   correctAnswer; 
 
    
     public Question(String questionText, String[] options, String correctAnswer) {
